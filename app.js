@@ -65,7 +65,6 @@ app.post("/submit_form", async (req, res) => {
     subject: "New Form Submission", // Subject line
     text: `Name: ${yourName}\nEmail: ${yourEmail}\nMessage: ${yourMessage}`, // Email content
   };
-
   // Send the email
   try {
     await transporter.sendMail(mailOptions);
